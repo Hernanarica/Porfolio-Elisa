@@ -2,5 +2,128 @@
 *:before,
 *:after {
    box-sizing: border-box;
+   font-family: 'Oxygen', sans-serif;
 }
 
+
+/* -------- Envoltorios -------- */
+
+body {
+   background-image: linear-gradient(#FAD7A1 0%, #E96D71 100%);
+   color: #0F0A0A;
+}
+
+.wrapper {
+   block-size: 100%;
+   box-sizing: border-box;
+}
+
+.wrapper__content {
+   max-inline-size: 1132px;
+   block-size: 100%;
+   padding-inline: 16px; /*desktop pasa a 11*/
+   margin-inline: auto;
+}
+
+
+/* -------- Header -------- */
+
+header {
+   height: 81px;
+}
+
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   block-size: 100%;
+}
+
+.navbar__logo {
+   margin-block: 0;
+   font-size: 0;
+}
+
+.navbar__menu {
+   display: none;
+}
+
+.navbar__button {
+   inline-size: 141px;
+   block-size: 49px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #0F0A0A;
+   background-color: #42E2B8;
+   box-sizing: border-box;
+   box-shadow: -4px 4px 14px rgba(0, 0, 0, 0.25);
+   text-align: center;
+   font-size: 0.875rem;
+   font-weight: bold;
+   text-decoration: none;
+   text-transform: uppercase;
+   border-radius: 90px;
+   border: 2px solid #0F0A0A;
+}
+
+.navbar__button span {
+   display: none;
+}
+
+
+/* -------- Hero -------- */
+
+.hero__image {
+   font-size: 0;
+   margin-block-end: 1rem;
+}
+
+.hero__image img {
+   display: block;
+   margin-inline: auto;
+}
+
+.hero__dates {
+   max-inline-size: 543px;
+}
+
+.hero__presentation-greeting,
+.hero__presentation-title {
+   font-weight: bold;
+   margin-block: 0;
+}
+
+.hero__presentation-greeting {
+   font-size: 3rem;
+}
+
+.hero__presentation-title {
+   font-size: 3.688rem;
+   margin-block-end: 1rem;
+}
+
+.hero__presentation-description {
+   margin-block-start: 0;
+   font-size: 1rem;
+   font-weight: 400;
+}
+
+.hero__social {
+   display: flex;
+   align-items: center;
+}
+
+.hero__social-item {
+   margin-inline-end: 1rem;
+}
+
+.hero__social-item:nth-child(4) {
+   margin-inline-end: 0;
+   font-size: 0;
+}
+
+.hero__social-link {
+   display: block;
+   font-size: 0;
+}
