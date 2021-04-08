@@ -81,11 +81,14 @@ header {
 
 .hero__image img {
    display: block;
+   max-inline-size: 450px;
+   inline-size: 100%;
    margin-inline: auto;
 }
 
 .hero__dates {
-   max-inline-size: 543px;
+   max-inline-size: 420px; /*543px en desktop*/
+   inline-size: 100%;
 }
 
 .hero__presentation-greeting,
@@ -112,6 +115,7 @@ header {
 .hero__social {
    display: flex;
    align-items: center;
+   margin-block-end: 2.5rem;
 }
 
 .hero__social-item {
@@ -126,4 +130,113 @@ header {
 .hero__social-link {
    display: block;
    font-size: 0;
+}
+
+
+/* -------- Me -------- */
+
+.me {
+   padding-block: 2.5rem;
+}
+
+.me__presentation {
+   color: #0F0A0A;
+   font-size: 1.5rem;
+   text-align: center;
+   font-weight: 400;
+}
+
+.me__text {
+   margin: 0 auto 1.5rem;
+   max-width: 900px;
+}
+
+.me__share-projects {
+   margin: 0 0 1.5rem 0;
+   font-weight: 700;
+}
+
+
+/* -------- Media-Query -------- */
+@media screen and (min-width: 768px) {
+   /*Hero*/
+   .hero {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+   }
+
+   .hero__image img {
+      max-inline-size: 604px;
+      inline-size: 100%;
+   }
+
+   .hero__dates {
+      margin-block-start: 4.688rem;
+   }
+}
+
+@media screen and (min-width: 1024px) {
+   /*Header*/
+   .navbar {
+      justify-content: space-between;
+   }
+
+   .navbar__button {
+      inline-size: 250px;
+   }
+
+   .navbar__menu {
+      display: flex;
+      padding: 0;
+      list-style: none;
+   }
+
+   .navbar__menu-item {
+      margin-inline-end: 2.5rem;
+   }
+
+   .navbar__menu-item:nth-child(3) {
+      margin-inline-end: 0;
+   }
+
+   .navbar__menu-link {
+      color: #0F0A0A;
+      font-size: 0.875rem;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase;
+      opacity: 0.5;
+      transition: 350ms;
+   }
+
+   .navbar__menu-link:hover {
+      opacity: 1;
+   }
+
+   .navbar__button span {
+      display: block;
+      margin-inline-end: 7px;
+   }
+
+   /*Me*/
+   .me {
+      padding-block: 12.5rem;
+   }
+
+   .me__text {
+      font-size: 2.125rem;
+   }
+}
+
+
+@media screen and (min-width: 1280px) {
+   /*Envoltorios*/
+   .wrapper {
+      background-image: url(../img/hero__eclipse.png);
+      background-repeat: no-repeat;
+      background-size: 220px 400px;
+      background-position-y: 3px;
+      background-position-x: 10%;
+   }
 }

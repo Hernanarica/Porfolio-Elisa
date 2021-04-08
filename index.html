@@ -13,16 +13,16 @@
 		<header>
 			<div class="wrapper">
 				<div class="wrapper__content">
-					<div class="navbar">
+					<nav class="navbar">
 						<h1 class="navbar__logo">
 							<img src="src/img/navbar__logo.png" alt="Mi logo">
 						</h1>
 						<ul class="navbar__menu">
 							<li class="navbar__menu-item">
-								<a href="#" class="header__menu-link">Hola</a>
+								<a href="#" class="navbar__menu-link">Hola</a>
 							</li>
 							<li class="navbar__menu-item">
-								<a href="#" class="header__menu-link">Proyectos</a>
+								<a href="#" class="navbar__menu-link">Proyectos</a>
 							</li>
 							<li class="navbar__menu-item">
 								<a href="#" class="navbar__menu-link">Hablemos</a>
@@ -32,7 +32,7 @@
 							<span>Descargar</span>
 							Currículum
 						</a>
-					</div>
+					</nav>
 				</div>
 			</div>
 		</header>
@@ -41,7 +41,10 @@
 				<div class="wrapper__content">
 					<div class="hero">
 						<div class="hero__image">
-							<img src="src/img/hero__image.png" alt="Foto de Elisa">
+							<picture>
+								<source srcset="src/img/hero__elisa-desktop.png" media="(min-width: 768px)" type="image/PNG">
+								<img src="src/img/hero__elisa-mobile.png" alt="Foto de Elisa">
+							</picture>
 						</div>
 						<div class="hero__dates">
 							<div class="hero__presentation">
@@ -70,6 +73,15 @@
 										<img src="src/img/hero__icon-twitter.svg" alt="Contacto por twitter">
 									</a>
 								</div>
+							</div>
+						</div>
+					</div>
+					<div class="me">
+						<div class="me__presentation">
+							<p class="me__text">A lo largo de mi carrera como Frontend, he tenido el privilegio de trabajar en proyectos retadores e increíbles</p>
+							<p class="me__share-projects">Aquí hay algunos que me gustaría compartir.</p>
+							<div class="me__icon">
+								<img src="src/img/me__icon-arrow.png" alt="arrow">
 							</div>
 						</div>
 					</div>
