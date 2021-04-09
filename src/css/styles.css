@@ -15,14 +15,19 @@ body {
 
 .wrapper {
    block-size: 100%;
-   box-sizing: border-box;
 }
 
 .wrapper__content {
    max-inline-size: 1132px;
    block-size: 100%;
-   padding-inline: 16px; /*desktop pasa a 11*/
    margin-inline: auto;
+}
+
+.navbar,
+.hero,
+.me,
+.project {
+   padding-inline: 16px;
 }
 
 
@@ -157,9 +162,103 @@ header {
 }
 
 
+/* Projects */
+.project {
+   color: #0F0A0A;
+}
+
+.project__info {
+   margin-block-end: 80px;
+}
+
+.project__info-container {
+   max-inline-size: 449px;
+   max-block-size: 209px;
+}
+
+.project__info-title {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   inline-size: 258px;
+   block-size: 47px;
+   margin: 0;
+   color: #42E2B8;
+   background: #0F0A0A;
+   box-shadow: -4px 4px 0px #FFFFFF;
+   font-size: 1.5rem;
+}
+
+.project__info-text {
+   margin-block-end: 1.5rem;
+   font-size: 1rem;
+}
+
+.button__green,
+.button__gray {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   max-inline-size: 328px;
+   block-size: 49px;
+   color: #0F0A0A;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-size: 0.875rem;
+   font-weight: 700;
+   border: 2px solid #0F0A0A;
+   border-radius: 90px;
+}
+
+.button__green {
+   margin-block-start: 1rem;
+   background-color: #42E2B8;
+}
+
+.buttons__icon {
+   inline-size: 23px;
+   block-size: 23px;
+   margin-inline-end: .5rem;
+}
+
+.project__image-container {
+   margin-block-end: 2.5rem;
+   font-size: 0;
+}
+
+.project__image {
+   max-inline-size: 656px;
+   inline-size: 100%;
+}
+
+.project__testimonials {
+   max-inline-size: 1132px;
+   padding: 1.5rem;
+   background: rgba(255, 255, 255, 0.2);
+   backdrop-filter: blur(39.7657px);
+   font-weight: 700;
+   border-radius: 1.5rem;
+}
+
+.project__testimonials-image {
+   font-size: 0;
+   text-align: center;
+}
+
+.project__testimonials-text {
+   font-size: 1rem;
+}
+
+.project__testimonials__name {
+   margin: 0;
+   font-size: 0.75rem;
+   opacity: .5;
+}
+
 /* -------- Media-Query -------- */
 @media screen and (min-width: 768px) {
-   /*Hero*/
+
+   /* Hero */
    .hero {
       display: flex;
       flex-direction: row-reverse;
@@ -173,6 +272,46 @@ header {
 
    .hero__dates {
       margin-block-start: 4.688rem;
+   }
+
+
+   /* Projects  */
+   .project__info {
+      display: flex;
+      flex-direction: row-reverse;
+   }
+
+   .buttons {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: flex-end;
+   }
+
+   .button__gray {
+      inline-size: 176px;
+   }
+
+   .button__green {
+      inline-size: 165px;
+      margin: 0;
+      margin-inline-end: 1rem;
+   }
+
+
+   /* Projects  */
+   .project__testimonials {
+      padding: 5rem;
+      text-align: center;
+   }
+
+   .project__testimonials-text {
+      margin-block: 1.5rem;
+      font-size: 2.125rem;
+   }
+
+   .project__testimonials__name {
+      font-size: 1.5rem;
    }
 }
 
@@ -221,11 +360,20 @@ header {
 
    /*Me*/
    .me {
-      padding-block: 12.5rem;
+      padding-block: 17.5rem;
    }
 
    .me__text {
       font-size: 2.125rem;
+   }
+}
+
+
+@media screen and (min-width: 1132px) {
+   /* Containers */
+   .me,
+   .project {
+      padding-inline: 0;
    }
 }
 
