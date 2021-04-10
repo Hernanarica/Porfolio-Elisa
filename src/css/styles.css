@@ -5,6 +5,16 @@
    scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar {
+   width: 5px;
+   background-color: #fafafa;
+}
+
+body::-webkit-scrollbar-thumb {
+   background-color: #0f0a0a;
+   border-radius: 5px;
+}
+
 
 /* -------- Envoltorios -------- */
 
